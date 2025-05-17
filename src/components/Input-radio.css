@@ -1,0 +1,58 @@
+.input-radio {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--Grey-900);
+    letter-spacing: 1.4px;
+    margin-top: 40px;
+}
+
+p {
+    margin-bottom: 16px;
+
+    .span {
+        color: var(--Grey-500);
+    }
+}
+
+.options {
+    display: inline-block;
+    width: 295px;
+    height: 50px;
+    border: 1px solid var(--Grey-500);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+
+    .circle{
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        border: 1px solid var(--Grey-500);
+    }
+
+    input{
+        display: none;
+    }
+
+    .option-name{
+        margin-left: 15px;
+        font-size: 18px;
+        letter-spacing: 0.9px;
+    }
+
+    .error {
+        color: var(--Red);
+        display: block;
+        margin-top: 10px;
+        letter-spacing: 0.8px;
+    }
+
+    .error {
+        color: var(--Red);
+        display: block;
+        margin-top: 10px;
+        letter-spacing: 0.8px;
+    }
+
+}

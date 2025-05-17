@@ -1,0 +1,8 @@
+.main-card {
+    width: 375px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--Green-200);
+    margin-left: auto;
+    margin-right: auto;
+}

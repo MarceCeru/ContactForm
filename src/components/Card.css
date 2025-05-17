@@ -1,0 +1,15 @@
+.card {
+    width: 345px;
+    background-color: var(--White);
+    margin-right: auto;
+    margin-left: auto;
+    padding: 30px 25px 30px 25px;
+    border-radius: 16px;
+}
+
+h1 {
+    font-size: 34px;
+    font-weight: 700;
+    color: var(--Grey-900);
+
+}

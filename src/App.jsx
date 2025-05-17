@@ -1,12 +1,12 @@
-import { useState } from 'react'
+
 import './App.css'
+import { ManinCcomponent } from './components/Main-component'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-     
+    < >
+     <ManinCcomponent />
     </>
   )
 }
