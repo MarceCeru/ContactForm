@@ -3,10 +3,21 @@
     font-weight: 400;
     color: var(--Grey-900);
     letter-spacing: 1.4px;
-    margin-top: 40px;
+    margin-top: 20px;
+
+    :hover{
+        cursor: pointer;
+    }
+
+    .radio-error {
+        color: var(--Red);
+        display: block;
+        margin-top: 10px;
+        letter-spacing: 0.8px;
+    }
 }
 
-p {
+.name {
     margin-bottom: 16px;
 
     .span {
@@ -23,36 +34,32 @@ p {
     display: flex;
     align-items: center;
     padding-left: 25px;
+    margin-top: 1px;
 
-    .circle{
+
+    .circle {
         height: 16px;
         width: 16px;
         border-radius: 50%;
         border: 1px solid var(--Grey-500);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    input{
+    img{
+        display: none;
+        width: 16px;
+    }
+
+    input {
         display: none;
     }
 
-    .option-name{
+    .option-name {
         margin-left: 15px;
         font-size: 18px;
         letter-spacing: 0.9px;
-    }
-
-    .error {
-        color: var(--Red);
-        display: block;
-        margin-top: 10px;
-        letter-spacing: 0.8px;
-    }
-
-    .error {
-        color: var(--Red);
-        display: block;
-        margin-top: 10px;
-        letter-spacing: 0.8px;
     }
 
 }

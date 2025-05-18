@@ -1,0 +1,41 @@
+.checkbox {
+    display: flex;
+    align-items: center;
+
+    :hover {
+        cursor: pointer;
+    }
+
+    .check-style {
+        border: 2px solid var(--Grey-500);
+        width: 17px;
+        height: 17px;
+        border-radius: 1px;
+    }
+
+    input {
+        width: 16px;
+        display: none;
+
+    }
+
+
+    p {
+        width: 230px;
+        color: var(--Grey-900);
+        line-height: 20px;
+        margin-left: 22px;
+
+        span {
+            color: var(--Grey-500);
+        }
+    }
+
+}
+
+.error {
+    color: var(--Red);
+    display: block;
+    margin-top: 10px;
+    letter-spacing: 0.8px;
+}
