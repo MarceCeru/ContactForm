@@ -1,3 +1,5 @@
+
+
 .input-radio {
     font-size: 16px;
     font-weight: 400;
@@ -5,25 +7,16 @@
     letter-spacing: 1.4px;
     margin-top: 20px;
 
-    :hover{
+    @media(min-width: 850px){
+        margin-top: 0;
+    }
+
+    :hover {
         cursor: pointer;
     }
 
-    .radio-error {
-        color: var(--Red);
-        display: block;
-        margin-top: 10px;
-        letter-spacing: 0.8px;
-    }
 }
 
-.name {
-    margin-bottom: 16px;
-
-    .span {
-        color: var(--Grey-500);
-    }
-}
 
 .options {
     display: inline-block;
@@ -34,7 +27,10 @@
     display: flex;
     align-items: center;
     padding-left: 25px;
-    margin-top: 1px;
+
+    @media(min-width: 850px){
+        width: 320px;
+    }
 
 
     .circle {
@@ -47,7 +43,7 @@
         align-items: center;
     }
 
-    img{
+    img {
         display: none;
         width: 16px;
     }

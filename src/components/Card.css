@@ -5,6 +5,13 @@
     margin-left: auto;
     padding: 30px 25px 25px 25px;
     border-radius: 16px;
+
+    @media (min-width: 850px) {
+        width: 735px;
+        margin-right: auto;
+        margin-right: auto;
+        padding: 48px 40px 40px 40px;
+    }
 }
 
 h1 {
@@ -12,5 +19,44 @@ h1 {
     font-weight: 700;
     color: var(--Grey-900);
     margin-bottom: 30px;
+
+    @media(min-width: 850px){
+        margin-bottom: 15px;
+    }
+
+}
+
+section {
+    @media (min-width: 850px) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+.name {
+    margin-top: 30px;
+    margin-bottom: 16px;
+    color: var(--Grey-900);
+
+    .span {
+        color: var(--Grey-500);
+    }
+}
+
+
+.radio {
+    @media (min-width: 850px) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.radio-error {
+    color: var(--Red);
+    display: none;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    letter-spacing: 0.6px;
 
 }

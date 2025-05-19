@@ -9,13 +9,18 @@ export const Card = () => {
     return (
         < div className="card" >
             <h1>Contact Us</h1>
-            <Input name="First Name" error="This field is required" tipo="text" ast="  *" />
-            <Input name="Last Name" error="This field is required" tipo="text" ast="  *" />
+            <section>
+                <Input name="First Name" error="This field is required" tipo="text" ast="  *" />
+                <Input name="Last Name" error="This field is required" tipo="text" ast="  *" />
+            </section>
             <Input name="Email Address" error="Please enter a valid email address" tipo="email" ast=" *" />
-            <InputRadio name="Query Type" ast="  *" option="General Enquiry" />
-            <InputRadio option="Support Request" error="
-             This field is required"/>
-            <Input name=" Message" tipo='text' ast="  *" height='240px' error="This field is required" />
+            <p className='name'>Query Type<span className='span'> *</span></p>
+            <div className='radio'>
+                <InputRadio option="General Enquiry" />
+                <InputRadio option="Support Request" />
+            </div>
+            <p className='radio-error'>Please select a Query Type</p>
+            <Input name=" Message" tipo='text' id="especial" ast="  *" height='240px' error="This field is required" />
             <InputCheckbox />
             <Button />
         </div >

@@ -5,4 +5,8 @@
     background-color: var(--Green-200);
     margin-left: auto;
     margin-right: auto;
+
+    @media (min-width: 850px){
+        width: 100%;
+    }
 }

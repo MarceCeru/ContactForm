@@ -1,12 +1,17 @@
 button {
     width: 295px;
     height: 60px;
-    border-radius: 10px;
+    border-radius: 9px;
     background-color: var(--Green-600);
     border: none;
     margin-top: 45px;
     color: var(--White);
     font-size: 18px;
+
+    @media(min-width: 850px){
+        width: 655px;
+        margin-top: 35px;
+    }
 
 
 }
