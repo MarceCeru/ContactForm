@@ -4,6 +4,7 @@ import { Input } from './Input';
 import { InputRadio } from './input-radio';
 import { InputCheckbox } from './input-checkbox';
 import { Button } from './Button';
+import { Textarea } from './Textarea';
 
 export const Card = () => {
     return (
@@ -20,7 +21,7 @@ export const Card = () => {
                 <InputRadio option="Support Request" />
             </div>
             <p className='radio-error'>Please select a Query Type</p>
-            <Input name=" Message" tipo='text' id="especial" ast="  *" height='240px' error="This field is required" />
+            <Textarea />
             <InputCheckbox />
             <Button />
         </div >

@@ -47,6 +47,11 @@ label {
         height: 50px;
         border-radius: 10px;
         border: 1px solid var(--Grey-500);
+        font-size: 18px;
+        padding-left: 25px;
+        padding-right: 25px;
+        color: var(--Grey-900);
+        outline: none;
 
         @media (min-width: 850px) {
             width: 320px;
@@ -74,17 +79,7 @@ label {
 
     :hover {
         cursor: pointer;
-    }
-
-}
-
-
-
-@media (min-width:850px) {
-
-    #especial {
-        width: 655px;
-        height: 105px !important;
+        border: 1.8px solid var(--Green-600);
     }
 
 }
