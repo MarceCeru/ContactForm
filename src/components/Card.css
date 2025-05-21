@@ -60,17 +60,3 @@ section {
     letter-spacing: 0.6px;
 
 }
-
-textarea {
-
-    @media(min-width: 850px) {
-        width: 655px;
-        height: 105px;
-        border-radius: 10px;
-        border: 1px solid var(--Grey-500);
-        font-size: 18px;
-        padding: 8px 25px 8px 25px;
-        color: var(--Grey-900);
-        outline: none;
-    }
-}

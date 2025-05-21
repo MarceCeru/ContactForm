@@ -3,9 +3,9 @@ import './Card.css';
 import { Input } from './Input';
 import { InputRadio } from './input-radio';
 import { InputCheckbox } from './input-checkbox';
-import { Button } from './Button';
 import { Textarea } from './Textarea';
 import { CardSuccess } from './Card-success';
+import { InputSubmit } from './InputSubmit';
 
 export const Card = () => {
     return (
@@ -26,7 +26,7 @@ export const Card = () => {
                 <p className='radio-error'>Please select a Query Type</p>
                 <Textarea />
                 <InputCheckbox />
-                <Button />
+                <InputSubmit/>
             </div >
         </>
 
