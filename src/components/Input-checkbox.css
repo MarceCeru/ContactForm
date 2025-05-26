@@ -7,11 +7,23 @@
         margin-top: 35px;
     }
 
-    :hover {
-        cursor: pointer;
+    .check-style {
+        border: 2px solid var(--Grey-500);
+        width: 17px;
+        height: 17px;
+        border-radius: 1px;
+        background-image: url(../assets/images/icon-checkbox-check.svg);
+        background-color: var(--Green-600);
+        background-size: 14px;
+        background-position: center;
+        background: none;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
-    .check-style {
+    .check-style2 {
         border: 2px solid var(--Grey-500);
         width: 17px;
         height: 17px;
@@ -19,8 +31,15 @@
         background-image: url(../assets/images/icon-checkbox-check.svg);
         background-size: 14px;
         background-position: center;
-        background: none;
+        background: block;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
+
+
+
 
     input {
         width: 16px;
@@ -53,8 +72,8 @@
 .error {
     color: var(--Red);
     display: none;
-    margin-top: 10px;
     letter-spacing: 0.8px;
+    padding-top: 10px;
 
     @media(min-width: 850px) {
         margin-top: 0;

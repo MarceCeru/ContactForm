@@ -42,7 +42,16 @@
         justify-content: center;
         align-items: center;
         position: absolute;
+       
+        :hover {
+            border: none;
+        }
+    }
 
+    .circle.selected {
+        background-image: url(../assets/images/icon-radio-selected.svg);
+        background-position: center;
+        background: block;
 
         :hover {
             border: none;

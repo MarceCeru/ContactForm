@@ -5,13 +5,14 @@
     margin-right: auto;
     width: 320px;
     padding: 25px;
-    display: none;
+    display: block;
     font-size: 15.9px;
 
     @media(min-width: 850px) {
         width: 450px;
         height: 105px;
     }
+
 
 
     .sended {
@@ -42,3 +43,4 @@
 
 
 }
+
