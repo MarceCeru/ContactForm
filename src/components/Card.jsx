@@ -39,7 +39,13 @@ export const Card = () => {
 
     const handleMailChange = (e) => {
         setMail(e.target.value);
-        setErrorMailVisible(false);
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(e.target.value)) {
+            setErrorMailVisible(true);
+        } else {
+            setErrorMailVisible(false);
+        }
+    //    setErrorMailVisible(false);
     };
 
     const handleCheckbox = (event) => {
@@ -115,7 +121,7 @@ export const Card = () => {
                     <Input name="First Name" error="This field is required" tipo="text" errorVisible={errorVisible} value={inputValue} onChange={handleNombreChange} ast="  *" />
                     <Input name="Last Name" error="This field is required" tipo="text" ast="  *" errorVisible={errorNameVisible} value={apellido} onChange={handleApellidoChange} />
                 </section>
-                <Input name="Email Address" error="Please enter a valid email address" tipo="email" ast=" *" errorVisible={errorMailVisible} value={mail} onChange={handleMailChange} />
+                <Input name="Email Address" error="Please enter a valid email address" tipo="email" required ast=" *" errorVisible={errorMailVisible} value={mail} onChange={handleMailChange}/>
                 <p className='name'>Query Type<span className='span'> *</span></p>
                 <div className='radio'>
                     <InputRadio value="opcion1" checked={selected === 'opcion1'} option="General Enquiry" onChange={handleInputRadio} />
