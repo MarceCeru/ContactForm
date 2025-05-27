@@ -23,13 +23,11 @@ export const Card = () => {
     const [errorTextarea, setErrorTextarea] = useState(false);
     const [errorCheck, setErrorCheck] = useState(false);
     const [successVisible, setSuccessVisible] = useState(false);
-    //const [errorRadio, setErrorRadio] = useState(false);
 
 
     const handleNombreChange = (e) => {
         setInputValue(e.target.value);
         setErrorVisible(false);
-        //    setSuccessVisible(false);
     };
 
     const handleApellidoChange = (e) => {
@@ -45,7 +43,6 @@ export const Card = () => {
         } else {
             setErrorMailVisible(false);
         }
-    //    setErrorMailVisible(false);
     };
 
     const handleCheckbox = (event) => {
